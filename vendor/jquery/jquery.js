@@ -11,6 +11,7 @@
  *
  * Date: 2018-01-20T17:24Z
  */
+
 ( function( global, factory ) {
 
 	"use strict";
@@ -35,6 +36,7 @@
 	} else {
 		factory( global );
 	}
+	
 
 // Pass this if window is not defined yet
 } )( typeof window !== "undefined" ? window : this, function( window, noGlobal ) {

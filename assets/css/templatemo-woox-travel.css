@@ -2359,3 +2359,17 @@ body {
       font-size: 11px; /* Tamaño más pequeño para el texto en móviles */
   }
 }
+.fixed-button {
+  position: fixed;
+  bottom: 25px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999;
+}
+
+.relative-button {
+  position: relative;
+  bottom: auto;
+  transform: none;
+  left: auto;
+}
