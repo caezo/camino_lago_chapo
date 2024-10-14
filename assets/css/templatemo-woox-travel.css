@@ -2335,7 +2335,7 @@ body {
 }
 
 .social-icon {
-  margin: 0 15px; /* Espacio entre los íconos */
+  margin: 0 10px; /* Espacio entre los íconos */
   font-size: 24px; /* Tamaño del ícono por defecto */
   color: #000; /* Color del ícono */
   text-decoration: none; /* Sin subrayado */
@@ -2352,10 +2352,10 @@ body {
 /* Ajustes para pantallas más pequeñas */
 @media (max-width: 576px) {
   .social-icon {
-      font-size: 16px; /* Tamaño más pequeño para íconos en móviles */
+      font-size: 15px; /* Tamaño más pequeño para íconos en móviles */
   }
 
   .social-label {
-      font-size: 12px; /* Tamaño más pequeño para el texto en móviles */
+      font-size: 11px; /* Tamaño más pequeño para el texto en móviles */
   }
 }
