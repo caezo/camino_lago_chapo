@@ -2352,7 +2352,7 @@ body {
 /* Ajustes para pantallas más pequeñas */
 @media (max-width: 576px) {
   .social-icon {
-      font-size: 20px; /* Tamaño más pequeño para íconos en móviles */
+      font-size: 18px; /* Tamaño más pequeño para íconos en móviles */
   }
 
   .social-label {
