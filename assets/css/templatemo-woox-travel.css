@@ -2329,16 +2329,33 @@ body {
 }
 
 .social-icons {
-  margin-top: 10px;
+  display: flex; /* Usar flexbox para una mejor alineación */
+  justify-content: center; /* Centrar los elementos */
+  flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
 }
 
 .social-icon {
-  margin: 0 20px; /* Aumenta el espacio entre los íconos */
-  font-size: 36px; /* Aumenta el tamaño de los íconos */
-  color: #000; /* Cambia el color a tu preferencia */
-  text-decoration: none; /* Elimina el subrayado */
+  margin: 0 15px; /* Espacio entre los íconos */
+  font-size: 24px; /* Tamaño del ícono por defecto */
+  color: #000; /* Color del ícono */
+  text-decoration: none; /* Sin subrayado */
+  display: flex; /* Alinea el ícono y el texto en línea */
+  align-items: center; /* Alinea verticalmente el ícono y el texto */
 }
 
-.social-icon:hover {
-  color: #189146; /* Cambia el color al pasar el ratón */
+.social-label {
+  margin-left: 5px; /* Espacio entre el ícono y el texto */
+  font-size: 16px; /* Tamaño del texto por defecto */
+  color: #000; /* Color del texto */
+}
+
+/* Ajustes para pantallas más pequeñas */
+@media (max-width: 576px) {
+  .social-icon {
+      font-size: 20px; /* Tamaño más pequeño para íconos en móviles */
+  }
+
+  .social-label {
+      font-size: 14px; /* Tamaño más pequeño para el texto en móviles */
+  }
 }
