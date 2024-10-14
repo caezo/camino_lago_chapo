@@ -93,7 +93,7 @@ a {
 h1, h2, h3, h4, h5, h6 {
   margin-top: 0px;
   margin-bottom: 0px;
-  color: #2a2a2a;
+  color: #189146;
   font-weight: 700;
 }
 
@@ -211,7 +211,7 @@ section {
   font-size: 30px;
   font-weight: 700;
   text-transform: capitalize;
-  color: #2a2a2a;
+  color: #189146;
 }
 
 /* 
@@ -1350,7 +1350,7 @@ About Page Style
 }
 
 .weekly-offers .item .thumb .text ul li:first-child {
-  color: #2a2a2a;
+  color: #189146;
   font-weight: 600;
 }
 
@@ -2326,4 +2326,19 @@ body {
   .weekly-offers .container-fluid {
     padding: 0px;
   }
+}
+
+.social-icons {
+  margin-top: 10px;
+}
+
+.social-icon {
+  margin: 0 20px; /* Aumenta el espacio entre los íconos */
+  font-size: 36px; /* Aumenta el tamaño de los íconos */
+  color: #000; /* Cambia el color a tu preferencia */
+  text-decoration: none; /* Elimina el subrayado */
+}
+
+.social-icon:hover {
+  color: #189146; /* Cambia el color al pasar el ratón */
 }
