@@ -371,12 +371,13 @@ Header Style
 }
 
 .header-area .main-nav .logo img {
-  width: 60px;
-  margin-top: 10px;
+  width: 130px;
+  margin-top: 5px;
+  margin-left: 100px;
 }
 
 .background-header .main-nav .logo img {
-  width: 60px;
+  width: 130px;
 }
 
 .header-area .main-nav .nav {
