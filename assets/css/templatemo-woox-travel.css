@@ -582,77 +582,71 @@ Header Style
 @media (max-width: 992px) {
   .header-area {
     top: 0;
+    background-color: #189146;
+    padding: 0px 15px;
+    height: 70px; /* Altura de la barra verde */
+    box-shadow: none;
+    text-align: center;
+    transition: all 0.3s ease-in-out;
   }
+
+  .header-area.header-sticky {
+    height: 60px; /* Altura reducida cuando la barra es sticky */
+  }
+
   .header-area .main-nav {
     background-color: transparent;
     border-radius: 0px;
+    padding: 0;
   }
-  .header-area .main-nav .nav {
-    height: auto;
-    flex-basis: 100%;
-  }
-  .header-area .main-nav .logo {
-    position: absolute;
-    left: 30px;
-    top: 15px;
-  }
-  .background-header .main-nav .logo {
-    top: 0px;
-  }
-  .background-header .main-nav .border-button {
-    top: 0px !important;
-  }
-  .header-area .main-nav .border-button {
-    position: absolute;
-    top: 15px;
-    right: 70px;
-  }
-  .header-area.header-sticky .nav li a:hover,
-  .header-area.header-sticky .nav li a.active {
-    color: #189146!important;
-    opacity: 1;
-  }
-  .header-area.header-sticky .nav li.search-icon a {
-    width: 100%;
-  }
-  .header-area {
-    background-color: #189146;
-    padding: 0px 15px;
-    height: 100px;
-    box-shadow: none;
-    text-align: center;
-  }
-  .header-area .container {
-    padding: 0px;
-  }
-  .header-area .logo {
-    margin-left: 0px;
-  }
+
   .header-area .menu-trigger {
     display: block !important;
+    position: absolute;
+    right: 15px; /* Mantén el botón a la derecha */
+    top: 50%; /* Posiciona el botón en el centro verticalmente */
+    transform: translateY(-50%); /* Ajusta para centrarlo verticalmente */
+    transition: top 0.3s ease-in-out;
   }
-  .header-area .main-nav {
-    overflow: hidden;
+
+  .header-area.header-sticky .menu-trigger {
+    top: 50%; /* Mantén centrado verticalmente cuando sea sticky */
+    transform: translateY(-50%); /* Asegura que esté centrado verticalmente */
   }
+
+  /* Ajusta el nav para que se abra justo debajo de la barra verde */
   .header-area .main-nav .nav {
-    float: none;
+    display: none; /* Oculto por defecto */
+    position: absolute; /* Para que el menú se coloque justo debajo */
+    top: 70px; /* Posición del menú justo debajo de la barra verde */
+    left: 0;
     width: 100%;
-    display: none;
-    -webkit-transition: all 0s ease 0s;
-    -moz-transition: all 0s ease 0s;
-    -o-transition: all 0s ease 0s;
-    transition: all 0s ease 0s;
-    margin-left: 0px;
+    background: #189146; /* Fondo verde del menú */
+    z-index: 9999; /* Asegura que esté encima de otros elementos */
+    margin: 0;
+    padding: 0;
   }
-  .header-area.header-sticky .nav {
-    margin-top: 85px !important;
+
+  .header-area.header-sticky .main-nav .nav {
+    top: 60px; /* Ajusta la posición del menú cuando la barra es sticky */
   }
-  .background-header.header-sticky .nav {
-    margin-top: 70px !important;
+
+  .header-area .main-nav .logo {
+    position: absolute;
+    left: 35px;
+    top: 0px;
   }
-  .header-area .main-nav .nav li:first-child {
-    border-top: 1px solid #eee;
+
+  .header-area .main-nav .logo img {
+    width: 130px; /* Ajusta el tamaño del logo */
+    height: auto;
   }
+
+  .header-area .main-nav .border-button {
+    display: none; /* Oculta el botón de contacto en la vista móvil */
+  }
+
+  /* Estilo de los items del menú */
   .header-area .main-nav .nav li {
     width: 100%;
     background: #f7f7f7;
@@ -660,6 +654,7 @@ Header Style
     padding-left: 0px !important;
     padding-right: 0px !important;
   }
+
   .header-area .main-nav .nav li a {
     height: 50px !important;
     line-height: 50px !important;
@@ -668,42 +663,19 @@ Header Style
     background: #f7f7f7 !important;
     color: #1e1e1e !important;
   }
+
   .header-area .main-nav .nav li a:hover {
     background: #f7f7f7 !important;
-    color: #189146!important;
+    color: #189146 !important;
   }
-  .header-area .main-nav .nav li.has-sub ul.sub-menu {
-    position: relative;
-    visibility: inherit;
-    opacity: 1;
-    z-index: 1;
-    transform: translateY(0%);
-    top: 0px;
-    width: 100%;
-    box-shadow: none;
-    height: 0px;
-    transition: all 0s;
-  }
-  .header-area .main-nav .nav li.submenu ul li a {
-    font-size: 12px;
-    font-weight: 400;
-  }
-  .header-area .main-nav .nav li.submenu ul li a:hover:before {
-    width: 0px;
-  }
-  .header-area .main-nav .nav li.has-sub ul.sub-menu {
-    height: auto;
-  }
-  .header-area .main-nav .nav li.has-sub:after {
-    color: #3B566E;
-    right: 30px;
-    font-size: 14px;
-    top: 15px;
-  }
-  .header-area .main-nav .nav li.submenu:hover ul, .header-area .main-nav .nav li.submenu:focus ul {
-    height: 0px;
+
+  /* Al abrir el menú (cuando el botón es clicado), se mostrará */
+  .header-area .main-nav.active .nav {
+    display: block;
   }
 }
+
+
 
 /* 
 ---------------------------------------------
