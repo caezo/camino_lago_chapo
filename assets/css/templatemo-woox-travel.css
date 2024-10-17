@@ -618,7 +618,7 @@ Header Style
   .header-area .main-nav .nav {
     display: none; /* Oculto por defecto */
     position: absolute; /* Para que el menú se coloque justo debajo */
-    top: 70px; /* Posición del menú justo debajo de la barra verde */
+    top: 60px; /* Posición del menú justo debajo de la barra verde */
     left: 0;
     width: 100%;
     background: #189146; /* Fondo verde del menú */
@@ -628,7 +628,7 @@ Header Style
   }
 
   .header-area.header-sticky .main-nav .nav {
-    top: 60px; /* Ajusta la posición del menú cuando la barra es sticky */
+    top: 70px; /* Ajusta la posición del menú cuando la barra es sticky */
   }
 
   .header-area .main-nav .logo {
