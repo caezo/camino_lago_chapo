@@ -628,7 +628,7 @@ Header Style
   }
 
   .header-area.header-sticky .main-nav .nav {
-    top: 70px; /* Ajusta la posición del menú cuando la barra es sticky */
+    top:  px; /* Ajusta la posición del menú cuando la barra es sticky */
   }
 
   .header-area .main-nav .logo {
