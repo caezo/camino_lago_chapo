@@ -635,12 +635,12 @@ Header Style
 
   .header-area .main-nav .logo {
     position: absolute;
-    left: 30px;
+    left: 0px;
     top: 0px;
   }
 
   .header-area .main-nav .logo img {
-    width: 160px; /* Ajusta el tamaño del logo */
+    width: 190px; /* Ajusta el tamaño del logo */
     height: auto;
     
   }
