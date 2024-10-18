@@ -634,11 +634,11 @@ Header Style
   }
 
   .header-area .main-nav .logo {
-    position: absolute;
-    left: -40px;
-    top: px;
-  }
-
+    flex: 1; /* Permitir que el logo ocupe espacio disponible */
+    display: flex; /* Usar flexbox para centrar el logo */
+    justify-content: center; /* Centrar horizontalmente el logo */
+    align-items: center; /* Centrar verticalmente si es necesario */
+}
   .header-area .main-nav .logo img {
     width: px; /* Ajusta el tamaño del logo */
     height: auto;
