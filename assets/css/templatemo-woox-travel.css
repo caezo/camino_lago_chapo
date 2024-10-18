@@ -585,6 +585,7 @@ Header Style
   .header-area {
     top: 0;
     background-color: #189146;
+    padding: 0px 15px;
     height: 70px; /* Altura de la barra verde */
     box-shadow: none;
     text-align: center;
@@ -597,14 +598,21 @@ Header Style
   .header-area .main-nav {
     background-color: transparent;
     border-radius: 8px; /* Aquí agregamos las esquinas curvas */
+    padding: 0;
   }
 
   .header-area .menu-trigger {
-    display: block !important; /* Mostrar el botón en móvil */
+    display: block !important;
     position: absolute;
     right: 15px; /* Mantén el botón a la derecha */
     top: 50%; /* Posiciona el botón en el centro verticalmente */
     transform: translateY(-50%); /* Ajusta para centrarlo verticalmente */
+    
+  }
+
+  .header-area.header-sticky .menu-trigger {
+    top: 50%; /* Mantén centrado verticalmente cuando sea sticky */
+    transform: translateY(-50%); /* Asegura que esté centrado verticalmente */
   }
 
   /* Ajusta el nav para que se abra justo debajo de la barra verde */
@@ -621,15 +629,33 @@ Header Style
     border-radius: 8px; /* Aquí agregamos las esquinas curvas al menú */
   }
 
-  .header-area .main-nav .logo img {
-    width: 190px; /* Ajusta el tamaño del logo como desees */
-    height: auto;
+  .header-area.header-sticky .main-nav .nav {
+    top: px; /* Ajusta la posición del menú cuando la barra es sticky */
   }
 
+  .header-area .main-nav .logo {
+    position: absolute;
+    left: -30px;
+    top: px;
+  }
+
+  .header-area .main-nav .logo img {
+    width: px; /* Ajusta el tamaño del logo */
+    height: auto;
+    
+  }
+
+  .header-area .main-nav .border-button {
+    display: none; /* Oculta el botón de contacto en la vista móvil */
+  }
+
+  /* Estilo de los items del menú */
   .header-area .main-nav .nav li {
     width: 100%;
     background: #f7f7f7;
     border-bottom: 1px solid #eee;
+    padding-left: 0px !important;
+    padding-right: 0px !important;
   }
 
   .header-area .main-nav .nav li a {
@@ -651,6 +677,7 @@ Header Style
     display: block;
   }
 }
+
 
 
 
