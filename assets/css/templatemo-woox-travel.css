@@ -371,13 +371,14 @@ Header Style
 }
 
 .header-area .main-nav .logo img {
-  width: 130px;
-  margin-top: 5px;
-  margin-left: 80px;
+  width: 185px;
+  margin-top: 0px;
+  margin-left: 100px;
 }
 
 .background-header .main-nav .logo img {
-  width: 130px;
+  width: 185px;
+  margin-left: 135px;
   
 }
 
@@ -580,7 +581,7 @@ Header Style
   }
 }
 
-@media (max-width: 992px) {
+@media (max-width: 992px) { 
   .header-area {
     top: 0;
     background-color: #189146;
@@ -639,7 +640,7 @@ Header Style
   }
 
   .header-area .main-nav .logo img {
-    width: 130px; /* Ajusta el tamaño del logo */
+    width: 160px; /* Ajusta el tamaño del logo */
     height: auto;
     
   }
