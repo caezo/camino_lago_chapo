@@ -65,6 +65,7 @@ ul, li {
   padding: 0;
   margin: 0;
   list-style: none;
+  
 }
 
 header, nav, section, article, aside, footer, hgroup {
@@ -352,9 +353,10 @@ Header Style
 }
 
 .header-area .main-nav {
-  background: transparent;
   display: flex;
-  padding: 0px 30px;
+  align-items: center; /* Alinea verticalmente los elementos */
+  justify-content: center; /* Centra horizontalmente */
+  padding: 0px; /* Elimina padding lateral */
 }
 
 .background-header .main-nav {
@@ -363,25 +365,23 @@ Header Style
 }
 
 .header-area .main-nav .logo {
-  flex-basis: 30%;
-  -webkit-transition: all 0.3s ease 0s;
-  -moz-transition: all 0.3s ease 0s;
-  -o-transition: all 0.3s ease 0s;
-  transition: all 0.3s ease 0s;
+  flex-grow: 1; /* Permite que el logo ocupe el espacio disponible */
+  display: flex; /* Usar flex para centrar el contenido */
+  justify-content: center; /* Centra el logo */
+
 }
 
 .header-area .main-nav .logo img {
-  width: 185px;
-  margin-top: 0px;
-  margin-left: 100px;
+  width: 185px; /* Ajusta el tamaño del logo según sea necesario */
+  height: auto; /* Mantiene la proporción del logo */
+  margin: 0; /* Elimina márgenes para centrar correctamente */
 }
 
 .background-header .main-nav .logo img {
-  width: 185px;
-  margin-left: 135px;
-  
+  width: 250px; /* Ajusta el ancho como necesites */
+  height: 70px; /* Ajusta la altura según lo desees */
+  margin-left: 0px; 
 }
-
 .header-area .main-nav .nav {
   flex-basis: 70%;
   justify-content: flex-end;
@@ -404,7 +404,7 @@ Header Style
 .header-area .main-nav .nav li a {
   display: block;
   font-weight: 400;
-  font-size: 15px;
+  font-size: 20px;
   text-transform: capitalize;
   color: #000000;
   -webkit-transition: all 0.3s ease 0s;
@@ -412,7 +412,7 @@ Header Style
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
   border: transparent;
-  padding: 8px 15px;
+  padding: 8px 10px;
   position: relative;
   border-radius: 18px;
   letter-spacing: 0.5px;
@@ -574,7 +574,7 @@ Header Style
 @media (max-width: 1200px) {
   .header-area .main-nav .nav li {
     padding-left: 10px;
-    padding-right: 10px;
+    padding-right: 10px;  
   }
   .header-area .main-nav:before {
     display: none;
@@ -634,14 +634,16 @@ Header Style
   }
 
   .header-area .main-nav .logo {
-    position: absolute;
-    left: -30px;
-    top: px;
-  }
+    display: flex;
+    justify-content: center; /* Centrar horizontalmente */
+    align-items: center; /* Centrar verticalmente */
+    margin: 0 auto; /* Asegurarse de que no haya márgenes que lo desplacen */
+    width: 100%; /* Ocupar todo el ancho */
+}
 
   .header-area .main-nav .logo img {
-    width: px; /* Ajusta el tamaño del logo */
-    height: auto;
+    width: 200px; /* Ajusta el tamaño del logo */
+    height: 70px;
     
   }
 
