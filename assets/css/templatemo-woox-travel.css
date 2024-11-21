@@ -2363,3 +2363,7 @@ body {
   transform: none;
   left: auto;
 }
+.separator {
+  border-bottom: 1px solid #ddd; /* Cambia el color si lo deseas */
+  margin: 20px 0; /* Ajusta el espacio alrededor de la línea */
+}
