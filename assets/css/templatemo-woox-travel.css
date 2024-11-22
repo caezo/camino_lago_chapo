@@ -2367,3 +2367,15 @@ body {
   border-bottom: 1px solid #ddd; /* Cambia el color si lo deseas */
   margin: 20px 0; /* Ajusta el espacio alrededor de la línea */
 }
+
+.right-content {
+  margin: 0 15px; /* Espaciado alrededor del texto */
+  padding: 10px;  /* Espaciado interno */
+  word-wrap: break-word; /* Ajusta el texto si es demasiado largo */
+  max-width: 100%; /* Limita el ancho al contenedor */
+  box-sizing: border-box; /* Incluye margen y relleno en el cálculo del ancho */
+}
+
+.row {
+  flex-wrap: wrap; /* Permite que los elementos se ajusten si no caben en la misma línea */
+}
