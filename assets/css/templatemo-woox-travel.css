@@ -2393,33 +2393,24 @@ body {
   align-items: center;
 }
 
-/* Contenedor de la imagen */
-.modal-content-container {
-  position: relative; /* Importante para posicionar bien la imagen */
-  max-width: 90%; /* Limita el ancho máximo */
-  max-height: 90%; /* Limita el alto máximo */
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
 /* Imagen dentro del modal */
 .modal-content {
-  max-width: 100%; /* Imagen ocupa hasta el ancho máximo del contenedor */
-  max-height: 100%; /* Imagen ocupa hasta el alto máximo del contenedor */
+  max-width: 90%; /* Imagen ocupa hasta el ancho máximo del contenedor */
+  max-height: 90%; /* Imagen ocupa hasta el alto máximo del contenedor */
   object-fit: contain; /* Mantiene proporciones sin recortar */
   background: none; /* Elimina fondo blanco */
   border-radius: 10px;
+  z-index: 1001;
 }
 
 /* Botón cerrar */
 .close {
-  position: absolute; /* Se posiciona relativo al modal */
+  position: absolute;
   top: 20px;
   right: 20px;
   color: white;
   font-size: 40px;
   font-weight: bold;
   cursor: pointer;
-  z-index: 1100; /* Asegura que esté encima de todo */
+  z-index: 1002;
 }
