@@ -19,6 +19,9 @@
     <link rel="stylesheet" href="assets/css/owl.css">
     <link rel="stylesheet" href="assets/css/animate.css">
     <link rel="stylesheet"href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
+    <link href="https://cdn.jsdelivr.net/npm/lightgallery/css/lightgallery-bundle.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/lightgallery/lightgallery.umd.js"></script>
+
 <!--
 
 TemplateMo 580 Woox Travel
@@ -180,30 +183,38 @@ https://templatemo.com/tm-580-woox-travel
       
         <div class="separator"></div>
 
-        <div class="col-lg-12 mx-4 my-4">
-          <div class="item">
-            <div class="row align-items-center">
-              <!-- Imágenes -->
-              <div class="col-lg-7 col-sm-12 order-lg-1 order-1 d-flex justify-content-center gap-3">
-                <div class="image-container" style="flex: 1; height: 350px; overflow: hidden;">
-                  <img src="assets/images/colage.jpg" alt="Habitación Principal" class="img-fluid" style="width: 90%; height: 100%; object-fit: cover;">
-                </div>
-                <div class="image-container" style="flex: 1; height: 350px; overflow: hidden;">
-                  <img src="assets/images/prueba.jpg" alt="Habitación Secundaria" class="img-fluid" style="width: 90%; height: 100%; object-fit: cover;">
-                </div>
-              </div>
-        
-              <!-- Texto -->
-              <div class="col-lg-5 col-sm-12 order-lg-2 order-2">
-                <div class="right-content ms-0  ">
-                  <p>El living y comedor están diseñados para ofrecer comodidad y funcionalidad,
-                    con una cocina equipada y una amplia terraza donde podrás disfrutar
-                    del entorno natural que la rodea.</p>
-                </div>
-              </div>
-            </div>
-          </div>
+        <!-- Contenido Actual -->
+<div class="col-lg-12 mx-4 my-4">
+  <div class="item">
+    <div class="row align-items-center">
+      <!-- Imágenes -->
+      <div class="col-lg-7 col-sm-12 order-lg-1 order-1 d-flex justify-content-center gap-3">
+        <div class="image-container" style="flex: 1; height: 350px; overflow: hidden;">
+          <img src="assets/images/colage negro.jpg" alt="Habitación Principal" class="img-fluid zoomable" style="width: 90%; height: 100%; object-fit: cover;">
         </div>
+        <div class="image-container" style="flex: 1; height: 350px; overflow: hidden;">
+          <img src="assets/images/prueba.jpg" alt="Habitación Secundaria" class="img-fluid zoomable" style="width: 90%; height: 100%; object-fit: cover;">
+        </div>
+      </div>
+
+      <!-- Texto -->
+      <div class="col-lg-5 col-sm-12 order-lg-2 order-2">
+        <div class="right-content ms-0">
+          <p>El living y comedor están diseñados para ofrecer comodidad y funcionalidad,
+            con una cocina equipada y una amplia terraza donde podrás disfrutar
+            del entorno natural que la rodea.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Modal para Mostrar Imagen -->
+<div id="imageModal" class="modal">
+  <span class="close">&times;</span>
+  <img class="modal-content" id="modalImage">
+</div>
+
         
         
         <div class="separator"></div>
@@ -268,6 +279,27 @@ https://templatemo.com/tm-580-woox-travel
               </div>
           </div>
       </div>
+      <div class="separator"></div>
+        <br>
+        <br>
+        <div id="gallery" class="gallery-container">
+          <!-- Imagen -->
+          <a href="assets/images/foto1.jpg">
+            <img src="assets/images/cabaña1.jpg" alt="Foto 1" class="img-thumbnail">
+          </a>
+        
+          <!-- Video -->
+          <a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" data-lg-size="1280-720">
+            <img src="assets/images/habitacion_2.jpg" alt="Video" class="img-thumbnail">
+          </a>
+        
+          <!-- Otra imagen -->
+          <a href="assets/images/foto2.jpg">
+            <img src="assets/images/habitacion_principal.jpg" alt="Foto 2" class="img-thumbnail">
+          </a>
+        </div>
+        
+        <br>
         <br>
       
 
@@ -378,6 +410,33 @@ https://templatemo.com/tm-580-woox-travel
       }
     });
   </script>
+
+<script>
+  // Selecciona el modal y los elementos clave
+  const modal = document.getElementById("imageModal");
+  const modalImage = document.getElementById("modalImage");
+  const closeButton = document.querySelector(".modal .close");
+
+  // Añade un evento de clic a todas las imágenes con la clase 'zoomable'
+  document.querySelectorAll(".zoomable").forEach((img) => {
+    img.addEventListener("click", () => {
+      modal.style.display = "flex"; // Muestra el modal
+      modalImage.src = img.src; // Cambia la imagen del modal
+    });
+  });
+
+  // Cierra el modal al hacer clic en el botón de cerrar
+  closeButton.addEventListener("click", () => {
+    modal.style.display = "none";
+  });
+
+  // Cierra el modal al hacer clic fuera de la imagen
+  modal.addEventListener("click", (e) => {
+    if (e.target === modal) {
+      modal.style.display = "none";
+    }
+  });
+</script>
 
 <script>
   window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
