@@ -2365,16 +2365,23 @@ body {
   transform: none;
   left: auto;
 }
+/* Estilo del separador */
 .separator {
-  border-bottom: 2px solid #ddd; /* Cambia el color si lo deseas */
-  margin: 20px 0; /* Ajusta el espacio alrededor de la línea */
+  border-bottom: 2px solid #ddd; /* Color del separador */
+  margin: 20px auto; /* Asegura que esté centrado */
+  max-width: 100%; /* No permite que exceda el ancho del contenedor */
+  width: 100%; /* Toma todo el ancho disponible */
+  box-sizing: border-box; /* Incluye el padding y border en el ancho */
 }
+
+/* Ajuste para pantallas pequeñas */
 @media (max-width: 576px) {
   .separator {
-    margin: 10px 0; /* Reducir los márgenes */
+    margin: 10px auto; /* Reduce márgenes en pantallas pequeñas */
     border-bottom: 1px solid #ddd; /* Línea más delgada */
   }
 }
+
 
 .right-content {
   margin: 0 15px; /* Espaciado alrededor del texto */
