@@ -2416,3 +2416,14 @@ body {
   cursor: pointer;
   z-index: 1002;
 }
+.map-container {
+  width: 600px; /* Ancho por defecto para pantallas grandes */
+  height: 450px; /* Altura por defecto para pantallas grandes */
+  max-width: 100%; /* No permitir que supere el ancho del contenedor */
+}
+@media (max-width: 576px) { /* Para pantallas pequeñas */
+  .map-container {
+    width: 100%; /* Ocupa todo el ancho del contenedor */
+    height: 300px; /* Reducir la altura para móviles */
+  }
+}
