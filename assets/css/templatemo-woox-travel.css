@@ -2366,8 +2366,14 @@ body {
   left: auto;
 }
 .separator {
-  border-bottom: 1px solid #ddd; /* Cambia el color si lo deseas */
+  border-bottom: 2px solid #ddd; /* Cambia el color si lo deseas */
   margin: 20px 0; /* Ajusta el espacio alrededor de la línea */
+}
+@media (max-width: 576px) {
+  .separator {
+    margin: 10px 0; /* Reducir los márgenes */
+    border-bottom: 1px solid #ddd; /* Línea más delgada */
+  }
 }
 
 .right-content {
