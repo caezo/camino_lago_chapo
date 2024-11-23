@@ -2366,21 +2366,24 @@ body {
   left: auto;
 }
 /* Estilo del separador */
+/* Estilo del separador */
 .separator {
   border-bottom: 2px solid #ddd; /* Color del separador */
   margin: 20px auto; /* Asegura que esté centrado */
-  max-width: 100%; /* No permite que exceda el ancho del contenedor */
-  width: 100%; /* Toma todo el ancho disponible */
-  box-sizing: border-box; /* Incluye el padding y border en el ancho */
+  max-width: 100%; /* Impide que el separador sea más ancho que su contenedor */
+  width: 100%; /* Asegura que el separador ocupe el 100% del ancho */
+  box-sizing: border-box; /* Incluye el padding y borde dentro del ancho total */
 }
 
-/* Ajuste para pantallas pequeñas */
+/* Ajustes para pantallas móviles */
 @media (max-width: 576px) {
   .separator {
     margin: 10px auto; /* Reduce márgenes en pantallas pequeñas */
-    border-bottom: 1px solid #ddd; /* Línea más delgada */
+    border-bottom: 1px solid #ddd; /* Hacer la línea más delgada */
+    width: calc(100% - 30px); /* Reduce el ancho para dejar espacio a los márgenes */
   }
 }
+
 
 
 .right-content {
