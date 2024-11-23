@@ -188,7 +188,7 @@ https://templatemo.com/tm-580-woox-travel
                       <img src="assets/images/colage negro.jpg" alt="Habitación Principal" class="img-fluid zoomable" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                     <div class="image-container" style="flex: 1; height: 350px; overflow: hidden;">
-                      <img src="assets/images/terraza1.jpg" alt="Habitación Secundaria" class="img-fluid zoomable" style="width: 100%; height: 100%; object-fit: cover;">
+                      <img src="assets/images/terraza1.jpg  " alt="Habitación Secundaria" class="img-fluid zoomable" style="width: 100%; height: 100%; object-fit: cover;">
                     </div>
                   </div>
                   <div class="col-lg-5 col-sm-12 order-lg-2 order-2">
@@ -322,31 +322,34 @@ https://templatemo.com/tm-580-woox-travel
 
 <script>
   // Obtener el modal y las imágenes
-  var modal = document.getElementById("imageModal");
-  var modalImg = document.getElementById("modalImage");
-  var imgs = document.querySelectorAll(".zoomable"); // Seleccionamos todas las imágenes con la clase zoomable
+  const modal = document.getElementById("imageModal");
+  const modalImg = document.getElementById("modalImage");
+  const imgs = document.querySelectorAll(".zoomable"); // Seleccionamos todas las imágenes con la clase zoomable
 
   // Mostrar el modal con la imagen correspondiente
-  imgs.forEach(function(img) {
-    img.onclick = function() {
+  imgs.forEach((img) => {
+    img.onclick = function () {
       modal.style.display = "flex";
       modalImg.src = this.src; // Asignamos la imagen que se hizo clic
     };
   });
 
   // Cerrar el modal si se hace clic en la "x"
-  var span = document.getElementsByClassName("close")[0];
-  span.onclick = function() {
+  const span = document.getElementsByClassName("close")[0];
+  span.onclick = function () {
     modal.style.display = "none";
   };
 
   // Cerrar el modal si se hace clic fuera de la imagen
-  window.onclick = function(event) {
+  modal.addEventListener("click", function (event) {
+    // Verificar que el clic sea directamente en el modal, no en sus hijos
     if (event.target === modal) {
-      modal.style.display = "none"; // Cerrar el modal si el clic fue fuera de la imagen
+      modal.style.display = "none"; // Cerrar el modal
     }
-  };
-</script> 
+  });
+</script>
+
+
 
 
 <script>
