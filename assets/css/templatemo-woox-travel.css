@@ -125,7 +125,7 @@ html,
 body {
   background: #1C1C1E;
   font-family: 'Poppins', sans-serif;
-  
+
 }
 
 ::selection {
@@ -341,7 +341,11 @@ Header Style
   -o-transition: all .5s ease 0s;
   transition: all .5s ease 0s;
 }
-
+.header-area {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
 .header-area {
   background-color: #189146;
   position: absolute;
@@ -2447,3 +2451,6 @@ body #user-button {
       height: 300px; /* Reducir la altura para móviles */
     }
   }
+  * {
+    box-sizing: border-box;
+}
