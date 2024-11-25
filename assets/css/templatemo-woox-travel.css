@@ -2469,3 +2469,18 @@ body #user-button {
   * {
     box-sizing: border-box;
 }
+.more-info .row {
+  margin-bottom: 20px; /* Espaciado entre filas */
+}
+
+.top-row .col-lg-4,
+.bottom-row .col-lg-4 {
+  text-align: center; /* Asegura el centrado del contenido */
+  margin-bottom: 0px; /* Espaciado entre columnas */
+}
+
+.bottom-row {
+  display: flex;
+  justify-content: center; /* Centra los elementos horizontalmente */
+  gap: 0px; /* Espaciado entre los elementos inferiores */
+}
