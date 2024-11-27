@@ -2365,6 +2365,7 @@ body #user-button {
     left: 50%;
     transform: translateX(-50%);
     z-index: 999;
+    transition: bottom 0.3s ease;
   }
 
   .relative-button {
