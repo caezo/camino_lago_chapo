@@ -2431,6 +2431,13 @@ body #user-button {
   z-index: 1001;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
 }
+@media (max-width: 768px) {
+  .modal-content {
+    max-width: 90%; /* Ocupa casi todo el ancho de la pantalla */
+    max-height: 90%; /* Ocupa casi todo el alto de la pantalla */
+    border-radius: 5px; /* Reducción del radio de borde para más espacio */
+  }
+}
 
   /* Botón cerrar */
   
