@@ -2507,15 +2507,16 @@ body #user-button {
   justify-content: center; /* Centra los elementos horizontalmente */
   gap: 0px; /* Espaciado entre los elementos inferiores */
 }
+
 footer {
-  position: relative; /* Establece el contenedor principal como relativo */
+  position: relative; /* Contenedor principal */
+  background-color: #189146; /* Fondo opcional */
 }
 
 footer .credits {
-  position: absolute; /* Posiciona el texto relativo al contenedor del footer */
-  bottom: 5px; /* Asegura que el texto esté en la parte inferior */
-  right: 5px; /* Mueve el texto hacia la derecha */
-  font-size: 8px; /* Tamaño del texto */
+  position: absolute; /* Posiciona los créditos dentro del contenedor */
+  bottom: 40px; /* Pega a la parte inferior del footer */
+  right: 10px; /* Se alinea a la derecha */
+  font-size: 10px; /* Tamaño del texto */
   color: #000; /* Color del texto */
-  text-align: right; /* Alinea el texto dentro del div */
 }
