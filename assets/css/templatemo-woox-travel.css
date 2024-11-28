@@ -2509,14 +2509,33 @@ body #user-button {
 }
 
 footer {
-  position: relative; /* Contenedor principal */
-  background-color: #189146; /* Fondo opcional */
+  background-color: #189146;
+  padding: 20px 0;
+  position: relative;
+}
+
+footer .social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap;
+  margin-bottom: 20px; /* Espacio entre los íconos y los derechos reservados */
 }
 
 footer .credits {
-  position: absolute; /* Posiciona los créditos dentro del contenedor */
-  bottom: 25px; /* Pega a la parte inferior del footer */
-  right: 5px; /* Se alinea a la derecha */
-  font-size: 10px; /* Tamaño del texto */
-  color: #000; /* Color del texto */
+  position: absolute;
+  top: 5px;  /* Poner el texto arriba */
+  right: 5px; /* Alinearlo a la derecha */
+  font-size: 9px;
+  color: #000;
+  text-align: right;
 }
+
+@media (max-width: 767px) {
+  footer .social-icons {
+    justify-content: space-around;
+    margin-bottom: 10px;
+  }
+}
+
+
