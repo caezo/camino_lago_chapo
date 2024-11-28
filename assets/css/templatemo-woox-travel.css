@@ -790,15 +790,18 @@ Banner Style
 }
 #section-1 .content-slider .slider .banner .banner-inner-wrapper h2 {
   font-weight: 500;
-  font-size: 20px;
-  color: #fff ;
+  font-size: 30px;
+  color: #ffffff; /* Color interno verde */
+  -webkit-text-stroke: 1px #000; /* Borde negro */
   margin-bottom: 20px;
 }
+
 #section-1 .content-slider .slider .banner .banner-inner-wrapper h1 {
-  font-size: 50px;
-  color: #fff;
+  font-size: 60px;
+  color: #189146; /* Color interno verde */
   font-weight: 700;
-  margin-bottom: 30px;
+  -webkit-text-stroke: 2px #000; /* Borde negro más grueso */
+  margin-bottom: 150px;
 }
 #section-1 .content-slider .slider .banner .banner-inner-wrapper .learn-more-button a:hover {
   color: #189146;
