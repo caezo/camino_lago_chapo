@@ -2513,9 +2513,9 @@ footer {
 
 footer .credits {
   position: absolute; /* Posiciona el texto relativo al contenedor del footer */
-  bottom: 10px; /* Asegura que el texto esté en la parte inferior */
-  right: 10px; /* Mueve el texto hacia la derecha */
-  font-size: 14px; /* Tamaño del texto */
+  bottom: 5px; /* Asegura que el texto esté en la parte inferior */
+  right: 5px; /* Mueve el texto hacia la derecha */
+  font-size: 8px; /* Tamaño del texto */
   color: #000; /* Color del texto */
   text-align: right; /* Alinea el texto dentro del div */
 }
