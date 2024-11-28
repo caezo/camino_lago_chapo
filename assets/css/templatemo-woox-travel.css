@@ -2515,8 +2515,8 @@ footer {
 
 footer .credits {
   position: absolute; /* Posiciona los créditos dentro del contenedor */
-  bottom: 40px; /* Pega a la parte inferior del footer */
-  right: 10px; /* Se alinea a la derecha */
+  bottom: 25px; /* Pega a la parte inferior del footer */
+  right: 5px; /* Se alinea a la derecha */
   font-size: 10px; /* Tamaño del texto */
   color: #000; /* Color del texto */
 }
