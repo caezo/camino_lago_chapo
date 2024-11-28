@@ -1931,12 +1931,24 @@ body #user-button {
     border-top-left-radius: 20px; /* Borde redondeado superior izquierdo */
     border-bottom-left-radius: 20px; /* Borde redondeado inferior izquierdo */
     overflow: hidden; /* Evita que la imagen se desborde del contenedor */
-    display: flex; /* Usar flexbox para centrar la imagen */
-    justify-content: center; /* Centrar horizontalmente */
-    align-items: center; /* Centrar verticalmente */
-    height: 100%; /* Asegúrate de que el contenedor tenga altura */
-    
+    display: flex; /* Flexbox para manejar las imágenes */
+    flex-direction: column; /* Colocar las imágenes en una columna */
+    justify-content: center; /* Centrar verticalmente dentro del contenedor */
+    align-items: center; /* Centrar horizontalmente dentro del contenedor */
+    height: auto; /* Permite que el contenedor se ajuste al contenido */
+    gap: 10px; /* Espacio entre las imágenes */
+    margin-top: 50px;
   }
+  
+  .amazing-deals .item .image img {
+    max-width: 100%; /* Ajusta la imagen al ancho del contenedor */
+    height: auto; /* Mantiene la proporción de las imágenes */
+    object-fit: cover; /* Cubre el área sin distorsionar las imágenes */
+    display: block; /* Asegura que no haya espacio debajo de la imagen */
+    border-radius: 10px; /* Opcional: bordes redondeados para las imágenes */
+  }
+  
+  
 
   .amazing-deals .item {
     background-color: #272727;
