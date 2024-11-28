@@ -2516,10 +2516,16 @@ footer {
 
 footer .social-icons {
   display: flex;
-  justify-content: center;
-  gap: 20px;
-  flex-wrap: wrap;
+  justify-content: center;  /* Centra los íconos horizontalmente */
+  gap: 0px;
+  flex-wrap: nowrap;  /* Evita que los íconos se acomoden en varias filas */
   margin-bottom: 20px; /* Espacio entre los íconos y los derechos reservados */
+  overflow: hidden; /* Evita el desbordamiento */
+}
+
+footer .social-icon {
+  flex-shrink: 1;  /* Permite que los íconos se reduzcan si es necesario */
+  font-size: 2rem;  /* Tamaño base de los íconos */
 }
 
 footer .credits {
@@ -2533,9 +2539,12 @@ footer .credits {
 
 @media (max-width: 767px) {
   footer .social-icons {
-    justify-content: space-around;
-    margin-bottom: 10px;
+    justify-content: center;  /* Asegura que los íconos estén centrados en pantallas pequeñas */
+    margin-bottom: 5px;
+  }
+
+  footer .social-icon {
+    font-size: 1rem;  /* Reducir el tamaño de los íconos en pantallas pequeñas */
   }
 }
-
 
