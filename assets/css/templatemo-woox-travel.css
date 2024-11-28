@@ -1840,7 +1840,7 @@ body #user-button {
     background-image: url(../images/heading-bg.jpg);
     background-position: center center;
     background-size: cover;
-    background-repeat: no-repeat;
+    background-repeat: no-repeat; 
     padding: 260px 0px 190px 0px;
     text-align: center;
   }
