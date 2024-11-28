@@ -2507,3 +2507,15 @@ body #user-button {
   justify-content: center; /* Centra los elementos horizontalmente */
   gap: 0px; /* Espaciado entre los elementos inferiores */
 }
+footer {
+  position: relative; /* Establece el contenedor principal como relativo */
+}
+
+footer .credits {
+  position: absolute; /* Posiciona el texto relativo al contenedor del footer */
+  bottom: 10px; /* Asegura que el texto esté en la parte inferior */
+  right: 10px; /* Mueve el texto hacia la derecha */
+  font-size: 14px; /* Tamaño del texto */
+  color: #000; /* Color del texto */
+  text-align: right; /* Alinea el texto dentro del div */
+}
