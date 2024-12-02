@@ -361,6 +361,28 @@ https://templatemo.com/tm-580-woox-travel
     }
   });
 </script>
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    const modal = document.getElementById("offerModal");
+    const closeButton = modal.querySelector(".close"); // Asegúrate de seleccionar la clase .close dentro del modal específico
+
+    // Mostrar el modal al cargar la página
+    modal.style.display = "flex";
+
+    // Cerrar el modal al hacer clic en la "X"
+    closeButton.addEventListener("click", function () {
+      modal.style.display = "none";
+    });
+
+    // Cerrar el modal al hacer clic fuera del contenido del modal
+    window.addEventListener("click", function (event) {
+      if (event.target === modal) {
+        modal.style.display = "none";
+      }
+    });
+  });
+</script>
+
 
 
 
@@ -369,6 +391,18 @@ https://templatemo.com/tm-580-woox-travel
   window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
 </script>
 <script defer src="/_vercel/insights/script.js"></script>
+
+<!-- Modal de Oferta -->
+<div id="offerModal" class="modal">
+  <div class="offer-modal-content">
+    <span class="close">&times;</span>
+    <img src="assets/images/oferta.jpg" alt="Oferta Especial" class="offer-image">
+    <button onclick="window.open('https://wa.me/56988269296', '_blank')" class="btn btn-success">
+      Contactar por WhatsApp
+    </button>
+  </div>
+</div>
+
   </body>
 
 </html>

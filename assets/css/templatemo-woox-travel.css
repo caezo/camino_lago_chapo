@@ -2437,6 +2437,7 @@ body #user-button {
   align-items: center;
 }
 
+
 /* Imagen dentro del modal */
 .modal-content {
   max-width: 60%; /* Imagen ocupa hasta el ancho máximo del contenedor */
@@ -2467,6 +2468,48 @@ body #user-button {
     cursor: pointer;
     z-index: 1002;
   }
+
+/* Tamaño exclusivo para el modal de la oferta */
+#offerModal .offer-modal-content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%; /* Tamaño personalizado */
+  max-width: 450px; /* Ancho máximo absoluto */
+  background: rgba(255, 255, 255, 0.1); /* Fondo semitransparente */
+  border-radius: 15px;
+  padding: 20px;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
+}
+
+#offerModal .offer-image {
+  max-width: 100%; /* Ajusta al ancho del modal */
+  max-height: 90vh; /* Ajusta al alto del viewport */
+  object-fit: contain; /* Mantiene proporciones */
+  border-radius: 10px;
+}
+
+#offerModal button {
+  margin-top: 15px; /* Espacio entre la imagen y el botón */
+}
+
+#offerModal .close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+  background: rgba(0, 0, 0, 0.6);
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
   @media (max-width: 576px) { /* Para pantallas pequeñas */
     .map-container {
       width: 100%; /* Ocupa todo el ancho del contenedor */
